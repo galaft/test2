@@ -1,0 +1,29 @@
+// test2.idl : test2.exe 的类型库源
+
+// 此文件将由 MIDL 编译器处理以产生
+// 类型库(test2.tlb)。
+
+[ uuid(38A58B40-8D5D-46FD-8D05-A9BB34BDA14A), version(1.0) ]
+library test2
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  Ctest2Doc 的主调度接口
+	
+	[ uuid(52686648-AF15-42D2-A952-A278DB717F8A) ]
+	dispinterface Itest2
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  Ctest2Doc 的类信息
+	
+	[ uuid(F05B6413-7720-475A-A9C2-6BFBAEFFE7F2) ]
+	coclass test2
+	{
+		[default] dispinterface Itest2;
+	};
+};
